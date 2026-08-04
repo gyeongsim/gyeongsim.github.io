@@ -14,9 +14,7 @@
     --ink-soft: #6B6960;
     --accent: #3D5A73;
   }
-
   *{ box-sizing: border-box; margin:0; padding:0; }
-
   body{
     background: var(--paper);
     color: var(--ink);
@@ -27,38 +25,41 @@
     justify-content: center;
     padding: 24px;
   }
-
   main{
     max-width: 520px;
     text-align: center;
   }
-
   h1{
     font-family: 'Source Serif 4', serif;
     font-weight: 600;
     font-size: clamp(32px, 6vw, 44px);
     margin-bottom: 14px;
   }
-
   p{
     font-size: 18px;
     color: var(--ink-soft);
     line-height: 1.6;
   }
-
   .accent{
     color: var(--accent);
     font-weight: 500;
   }
+  .cv-link{
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 14px;
+    color: var(--ink-soft);
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+  }
+  .cv-link:hover{ color: var(--accent); border-bottom-color: var(--accent); }
 </style>
 </head>
 <body>
-
 <main>
   <h1>Gyeongsim Kim</h1>
-  <!-- <p> <span class="accent">PhD Candidate</span> <span class="accent">Georgia Tech</span>.</p> -->
+  <p>I'm a <span class="accent">PhD Candidate</span> at <span class="accent">Georgia Tech</span>.</p>
   <a class="cv-link" href="cv/">View my CV →</a>
 </main>
-
 </body>
 </html>
